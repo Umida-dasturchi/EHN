@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHN</title>
+    <style>
+        div:empty {
+            display: none;
+        }
+
+        section:has(img) {
+            border: .125rem solid burlywood;
+        }
+
+        p:not(.active) {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- // 1.:empty -->
+    <div></div>
+
+    <!-- ? 2. :has(img)-->
+    <section>
+        <img src="./photo_2025-07-25_14-41-50.jpg" alt="A girl is playing the guitar" height="100%" width="100%">
+    </section>
+
+    <section>
+        <p>Hijabi</p>
+    </section>
+
+    <!-- ~ 3.:not(.active)-->
+    <p>This will be gray</p>
+    <p class="active">This won't be grey</p>
+</body>
+</html>
